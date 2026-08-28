@@ -1,12 +1,8 @@
-// Dummy moisture value for testing
-// Later this will come from the ESP32 sensor
-
-let moisture = 30;
-
-
 // Get HTML elements
 
 let button = document.querySelector("#check-btn");
+
+let input = document.querySelector("#moisture-input");
 
 let moistureText = document.querySelector(".moisture");
 
@@ -21,17 +17,39 @@ let advice = document.querySelector("#advice");
 let time = document.querySelector("#time");
 
 
-// Run when farmer clicks the button
+// Run when the button is clicked
 
 button.addEventListener("click", function () {
 
-    // Display moisture
+    // Get the value entered by the farmer
+    let moisture = Number(input.value);
 
+
+    // Check if input is empty
+    if (input.value === "") {
+
+        status.textContent =
+            "⚠️ Please enter a moisture value.";
+
+        return;
+    }
+
+
+    // Check if value is between 0 and 100
+    if (moisture < 0 || moisture > 100) {
+
+        status.textContent =
+            "⚠️ Please enter a value between 0 and 100.";
+
+        return;
+    }
+
+
+    // Display moisture percentage
     moistureText.textContent = moisture + "%";
 
 
     // Update progress bar
-
     progressBar.style.width = moisture + "%";
 
 
@@ -74,7 +92,7 @@ button.addEventListener("click", function () {
     }
 
 
-    // Show current time
+    // Show current date and time
 
     let currentTime = new Date();
 
