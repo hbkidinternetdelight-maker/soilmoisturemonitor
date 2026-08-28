@@ -12,7 +12,6 @@
 
 <body>
 
-    <!-- Header -->
     <header>
         <div class="logo">
             🌱 Smart Farm Monitor
@@ -21,69 +20,42 @@
     </header>
 
 
-    <!-- Main Content -->
     <main class="container">
 
-        <!-- Welcome -->
         <section class="welcome">
             <h1>Farm Monitoring Dashboard</h1>
-            <p>Enter soil moisture to check the condition of your field.</p>
+            <p>Monitor your soil moisture using a connected sensor.</p>
         </section>
 
 
-        <!-- Main Card -->
         <section class="main-card">
 
             <h2>💧 Soil Moisture</h2>
 
+            <!-- Sensor reading will appear here -->
             <p class="moisture">--</p>
 
-
-            <!-- Progress Bar -->
             <div class="progress-container">
                 <div class="progress-bar"></div>
             </div>
 
-
-            <!-- Status -->
             <p class="status">
-                Enter moisture value to check
+                Connect sensor and check soil moisture
             </p>
 
-
-            <!-- Manual Input -->
-            <div class="manual-input">
-
-                <label for="moisture-input">
-                    Enter Soil Moisture (%)
-                </label>
-
-                <input
-                    type="number"
-                    id="moisture-input"
-                    min="0"
-                    max="100"
-                    placeholder="Enter value (0-100)"
-                >
-
-            </div>
-
-
-            <!-- Button -->
             <button id="check-btn">
-                Check Status
+                💧 Check Soil Moisture
             </button>
 
         </section>
 
 
-        <!-- Information Cards -->
         <section class="info-grid">
 
             <div class="card">
                 <h3>🌾 Field Status</h3>
                 <p id="field-status">
-                    Waiting for moisture value...
+                    Waiting for sensor reading...
                 </p>
             </div>
 
@@ -91,7 +63,7 @@
             <div class="card">
                 <h3>💧 Irrigation Advice</h3>
                 <p id="advice">
-                    Enter moisture value to get advice.
+                    Sensor reading required.
                 </p>
             </div>
 
@@ -99,20 +71,21 @@
             <div class="card">
                 <h3>📡 Soil Moisture Sensor</h3>
                 <p id="sensor-status">
-                    Ready for sensor connection
+                    🔴 Not Connected
                 </p>
             </div>
 
 
             <div class="card">
-                <h3>📍 Farm Location</h3>
-                <p>My Farm</p>
+                <h3>⚙️ Controller</h3>
+                <p>
+                    ESP32
+                </p>
             </div>
 
         </section>
 
 
-        <!-- Moisture Guide -->
         <section class="guide">
 
             <h2>🌱 Moisture Level Guide</h2>
@@ -135,7 +108,6 @@
         </section>
 
 
-        <!-- Time -->
         <section class="update">
             <p>
                 🕒 Last Updated:
@@ -146,14 +118,12 @@
     </main>
 
 
-    <!-- Footer -->
     <footer>
         <p>🌱 Smart Farm Soil Monitoring System</p>
-        <p>Soil Moisture Monitoring for Better Irrigation Decisions</p>
+        <p>Powered by ESP32 & Soil Moisture Sensor</p>
     </footer>
 
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
