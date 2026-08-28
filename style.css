@@ -10,8 +10,6 @@ body {
     color: #333;
 }
 
-/* Header */
-
 header {
     background: #2e7d32;
     color: white;
@@ -28,18 +26,12 @@ header p {
     margin-top: 8px;
 }
 
-
-/* Main Container */
-
 .container {
     width: 90%;
     max-width: 1000px;
     margin: auto;
     padding: 30px 0;
 }
-
-
-/* Welcome Section */
 
 .welcome {
     text-align: center;
@@ -50,9 +42,6 @@ header p {
     color: #2e7d32;
     margin-bottom: 10px;
 }
-
-
-/* Main Card */
 
 .main-card {
     background: white;
@@ -71,12 +60,9 @@ header p {
 }
 
 .status {
-    font-size: 20px;
+    font-size: 18px;
     margin: 20px 0;
 }
-
-
-/* Progress Bar */
 
 .progress-container {
     width: 100%;
@@ -93,36 +79,12 @@ header p {
     transition: width 0.5s;
 }
 
-
-/* Manual Input */
-
-.manual-input {
-    margin-top: 25px;
-}
-
-.manual-input label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.manual-input input {
-    width: 220px;
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-
-/* Button */
-
 #check-btn {
     background: #2e7d32;
     color: white;
     border: none;
     padding: 15px 25px;
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 17px;
     border-radius: 8px;
     cursor: pointer;
@@ -131,9 +93,6 @@ header p {
 #check-btn:hover {
     background: #1b5e20;
 }
-
-
-/* Information Cards */
 
 .info-grid {
     display: grid;
@@ -153,9 +112,6 @@ header p {
     color: #2e7d32;
     margin-bottom: 10px;
 }
-
-
-/* Guide */
 
 .guide {
     background: white;
@@ -186,17 +142,11 @@ header p {
     margin-top: 5px;
 }
 
-
-/* Update */
-
 .update {
     text-align: center;
     margin-top: 25px;
     color: gray;
 }
-
-
-/* Footer */
 
 footer {
     background: #1b5e20;
@@ -206,9 +156,6 @@ footer {
     margin-top: 30px;
 }
 
-
-/* Mobile Responsive */
-
 @media (max-width: 600px) {
 
     .moisture {
@@ -217,10 +164,6 @@ footer {
 
     .logo {
         font-size: 22px;
-    }
-
-    .manual-input input {
-        width: 100%;
     }
 
 }
