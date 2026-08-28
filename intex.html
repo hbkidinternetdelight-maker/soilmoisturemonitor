@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Farm - Soil Moisture Monitor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            🌱 Smart Farm Monitor
+        </div>
+
+        <p>Soil Moisture Monitoring System</p>
+    </header>
+
+
+    <main class="container">
+
+        <section class="welcome">
+            <h1>Farm Monitoring Dashboard</h1>
+            <p>Check your soil moisture before making irrigation decisions.</p>
+        </section>
+
+
+        <section class="main-card">
+
+            <h2>💧 Soil Moisture</h2>
+
+            <!-- Moisture will appear after button click -->
+            <p class="moisture">--</p>
+
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+
+            <p class="status">Click the button to check soil moisture</p>
+
+            <button id="check-btn">
+                Check Soil Moisture
+            </button>
+
+        </section>
+
+
+        <section class="info-grid">
+
+            <div class="card">
+                <h3>🌾 Field Status</h3>
+                <p id="field-status">
+                    Waiting for moisture reading...
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>💧 Irrigation Advice</h3>
+                <p id="advice">
+                    Click the button to get advice.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>📡 Sensor</h3>
+                <p>ESP32 Sensor System</p>
+            </div>
+
+
+            <div class="card">
+                <h3>📍 Location</h3>
+                <p>My Farm</p>
+            </div>
+
+        </section>
+
+
+        <section class="guide">
+
+            <h2>🌱 Moisture Level Guide</h2>
+
+            <div class="guide-item">
+                <span>🔴 0% - 29%</span>
+                <p>Dry Soil — Irrigation may be needed.</p>
+            </div>
+
+            <div class="guide-item">
+                <span>🟢 30% - 70%</span>
+                <p>Normal — Suitable moisture level.</p>
+            </div>
+
+            <div class="guide-item">
+                <span>🔵 71% - 100%</span>
+                <p>Wet Soil — Avoid unnecessary irrigation.</p>
+            </div>
+
+        </section>
+
+
+        <section class="update">
+
+            <p>
+                🕒 Last Updated:
+                <span id="time">Not checked yet</span>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>🌱 Smart Farm Soil Monitoring System</p>
+        <p>Powered by ESP32 & Soil Moisture Sensor</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
